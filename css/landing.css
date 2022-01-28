@@ -1,0 +1,80 @@
+.hero {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    background-color:var(--background);
+}
+
+.hero-img {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.hero-img img{
+    width:40%;
+    max-height:auto;
+}
+
+.hero-content {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    margin: 10px;
+    width:40%;
+
+}
+
+.hero-content h1 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight:400;
+}
+
+.hero-buttons {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin: 1rem;
+}
+
+.btn {
+    margin:1rem;
+    padding:1rem;
+    font-size: 1rem;
+    color:var(--default-color);
+    font-weight:600;
+    height: 4rem;
+    width:10rem;
+
+}
+
+.get-started-btn {
+    background-color:var(--new-york-pink);
+}
+
+.get-started-btn:hover {
+    background-color:var(--melon);
+}
+
+.github-btn {
+    border: 2px solid var(--new-york-pink);
+}
+
+.github-btn:hover {
+    background-color:var(--melon);
+}
+
+.github-btn i {
+    padding-right: 0.5rem;
+    font-size: 1.2rem;
+}
