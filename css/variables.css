@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600&display=swap');
+
+:root {
+
+    /* Colours */
+    --primary-color: #E58087;
+    --secondary-color: #FEF4D7;
+    --background:#FAE1CA;
+    --new-york-pink: #E99394;
+    --melon:#F2BAAF;
+
+    --default-color: black;
+
+    /* Fonts */
+    --primary-font: 'Poppins', sans-serif;
+
+    /* Media Queries */
+    --breakpoint-sm: 700px;
+    --breakpoint-lg: 1000px;
+
+
+}
+
+
+
+
+/* My Colour palette
+Cornsilk: #FEF4D7
+Almond:#FAE1CA; (Secondary Color)
+Apricot:#F6CDBC
+Melon:#F2BAAF
+Pastel Pink:#EDA7A2
+New York Pink:#E99394 (Primary Color)
+Light Coral:#E58087
+*/
+
