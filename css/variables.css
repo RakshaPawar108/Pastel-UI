@@ -5,11 +5,28 @@
     /* Colours */
     --primary-color: #E58087;
     --secondary-color: #FEF4D7;
-    --background:#FAE1CA;
+    --background:#fae1ca;
     --new-york-pink: #E99394;
     --melon:#F2BAAF;
+    --apricot:#F6CDBC;
 
     --default-color: black;
+    --white:#fff;
+    --gray: #ccc;
+
+    --pastel-blue:#B2FFFF;
+    --pastel-blue-text: #0a3b85;
+    --pastel-red:#FF928A;
+    --pastel-red-text:#850000;
+    --pastel-yellow:#FFFFB5;
+    --pastel-yellow-text: #83831C;
+    --pastel-green: #C1E1C1;
+    --pastel-green-text: #426242;
+
+    --green: green;
+    --yellow: yellow;
+    --red: red;
+    --blue: blue;
 
     /* Fonts */
     --primary-font: 'Poppins', sans-serif;
