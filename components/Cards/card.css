@@ -1,0 +1,231 @@
+.cards-wrapper {
+    background-color:var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    justify-self: center;
+    align-self: center;
+    padding: 2rem;
+    width: fit-content;
+    margin: 2rem;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.card,
+.card-basic {
+    width: 22rem;
+    height: 28rem;
+    background-color: var(--secondary-color);
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    box-shadow: -3px 3px 3px gray;
+}
+
+.card:hover {
+    box-shadow: -3px 3px 3px black;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.image-container img {
+    width:22rem;
+    height:15rem;
+    max-inline-size: 100%;
+    border-radius: 0.5rem 0.5rem 0 0;
+    -webkit-border-radius: 0.5rem 0.5rem 0 0;
+    -moz-border-radius: 0.5rem 0.5rem 0 0;
+    -ms-border-radius: 0.5rem 0.5rem 0 0;
+    -o-border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0.5rem;
+}
+
+.content-container h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.content-container h3 {
+    font-size: 1rem;
+    color: var(--dark-gray);
+    font-weight: 400;
+}
+
+.content-container p {
+    padding-top: 1rem;
+    color: var(--light-gray);
+    font-size: 0.9rem;
+}
+
+.action-items-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: fit-content;
+}
+
+.btn {
+    border: none;
+    background-color: transparent;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 10%;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
+    width: fit-content;
+    margin:0.5rem;
+    padding: 0.5rem;
+}
+
+.btn:hover, i:hover {
+    box-shadow: -1px 1px 1px rgba(0,0,0,0.5)
+}
+
+.icon-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-weight: 100;
+    text-align: center;
+    width: fit-content;
+}
+
+.icon-container>* {
+    padding-top: 0.7rem;
+}
+
+i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.3rem;
+    height: 2.6rem;
+    width: 2.6rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+
+
+/* Variants */
+
+.card-text-over-media {
+    position: relative;
+    height: 24rem;
+}
+
+.card-text-over-media>.content-container>h1 {
+    top: 10rem;
+
+}
+
+.card-text-over-media>.content-container>h3 {
+    top: 12.5rem;
+}
+
+.card-text-over-media>.content-container>h1,
+.card-text-over-media>.content-container>h3 {
+    position: absolute;
+    color: var(--white);
+}
+
+.card-text-over-media>.content-container>p {
+    padding-top: 0.5rem;
+}
+
+/* Basic Card with Header */
+
+.card-basic-with-header {
+    height: 29rem;
+}
+
+.card-basic-with-header>.content-container>p {
+    padding-top: 0.2rem;
+}
+
+.card-basic-with-header>.image-container>img {
+    border-radius: 0rem;
+    -webkit-border-radius: 0rem;
+    -moz-border-radius: 0rem;
+    -ms-border-radius: 0rem;
+    -o-border-radius: 0rem;
+}
+
+/* Card with only buttons */
+
+.card-with-buttons>.action-items-container>.icon-container,
+.card-with-icons>.action-items-container>.btn-container {
+    display: none;
+}
+
+/* Card with only icons */
+.card-with-icons>.action-items-container>.icon-container {
+    padding-top: 1rem;
+    padding-left: 12rem;
+
+}
+
+/* Horizontal card with image and text */
+
+.card-horizontal , .card-horizontal img {
+    width: 30rem;
+    height: 12rem;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+
+.card-horizontal>.image-container {
+    width: 40%;
+}
+
+.card-horizontal>.content-container {
+    flex-direction: column;
+}
+
+.card-horizontal>.action-items-container {
+    position:absolute;
+    bottom: 0rem;
+}
+
+.card-horizontal>.action-items-container>.btn-container > .btn {
+    color:var(--white)
+}
+
+.card-horizontal>.action-items-container>.icon-container {
+    padding-left: 7rem;
+}
+
