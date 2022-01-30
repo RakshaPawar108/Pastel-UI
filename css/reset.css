@@ -31,3 +31,73 @@ button {
 .hide {
     display: none;
 }
+
+.wrapper {
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+}
+
+em, strong {
+    background-color:var(--secondary-color);
+    color: var(--primary-color);
+    padding: 0.1rem;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    width: 50%;
+    position: relative;
+    margin: 30px auto;
+}
+
+.divider {
+    background: var(--primary-color);
+}
+
+
+.heading,
+.sub-heading {
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+.heading h1 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.heading h1,
+.sub-heading h3 {
+    text-transform: uppercase;
+}
+
+.sub-heading h3 {
+    font-size: 1.5rem;
+}
+
+.heading p,
+.sub-heading p {
+    text-align: left;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+}
+
+
+iframe {
+    overflow: hidden;
+}
+
+.code-wrapper {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+

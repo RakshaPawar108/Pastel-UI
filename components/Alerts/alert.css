@@ -1,0 +1,51 @@
+.alerts-wrapper {
+    background-color:var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    justify-self: center;
+    align-self: center;
+    padding: 2rem;
+    width: 80%;
+    margin: 2rem;
+}
+
+.alert {
+    padding: 1rem;
+    width: 100%;
+    background-color:white;
+    margin: 1rem;
+    font-size: 1.2rem;
+}
+
+.alert i {
+    font-size:1.2rem;
+    padding: 0.5rem;
+}
+
+.alert-error {
+    background-color:var(--pastel-red);
+    color: var(--pastel-red-text);
+}
+
+.alert-warning {
+    background-color:var(--pastel-yellow);
+    color: var(--pastel-yellow-text);
+}
+
+.alert-info {
+    background-color:var(--pastel-blue);
+    color: var(--pastel-blue-text);
+}
+
+.alert-success {
+    background-color:var(--pastel-green);
+    color: var(--pastel-green-text);
+}
+
+
+
+
+
+
