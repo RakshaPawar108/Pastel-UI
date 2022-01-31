@@ -13,6 +13,10 @@
     --default-color: black;
     --white:#fff;
     --gray: #ccc;
+    --dark-gray: gray;
+    --light-gray: #8c92ac;
+    --dark-blue: #0000ff;
+    --hover-gray: #eee;
 
     --pastel-blue:#B2FFFF;
     --pastel-blue-text: #0a3b85;
