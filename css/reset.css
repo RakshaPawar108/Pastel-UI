@@ -88,16 +88,6 @@ hr {
 }
 
 
-iframe {
-    overflow: hidden;
-}
-
-@media screen and (max-width: 600px){
-    iframe {
-        display:none;
-    }
-}
-
 .code-wrapper {
     display: flex;
     align-self: center;
