@@ -1,0 +1,73 @@
+@import url(/components/Avatar/avatar.css);
+
+.badges-wrapper {
+    align-items: baseline;
+    align-self: center;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    margin: 1rem;
+    padding: 1rem;
+    width: 80%;
+}
+
+.badge {
+    position: relative;
+}
+
+/* Badge with avatars */
+ .avatar-badge {
+    position: absolute;
+    background-color: var(--dark-gray);
+    height:1.5rem;
+    width:1.5rem;
+    bottom:2px;
+    right:4px;
+    border-radius: 50%;
+    border: 2px solid var(--white);
+
+}
+
+.avatar-badge.online {
+    background-color:var(--green);
+}
+
+.avatar-badge.busy {
+    background-color: var(--red);
+}
+
+.avatar-badge.away {
+    background-color: var(--orange);
+}
+
+.avatar-badge.offline {
+    background-color: var(--light-gray);
+}
+
+/* Badge with icons */
+
+.icon {
+    font-size: 3rem;
+    padding: 1rem;
+    margin: 0 0.5rem;
+}
+
+.icon-container {
+    position: relative;
+}
+
+.icon-badge {
+    position: absolute;
+    font-size: 1rem;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    width:2.5rem;
+    height:2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    top: 0;
+    right:0;
+}
