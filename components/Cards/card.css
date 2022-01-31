@@ -16,7 +16,7 @@
 	background-color: var(--secondary-color);
 	border-radius: 0.5rem;
 	box-shadow: -3px 3px 3px gray;
-	height: 28rem;
+	height: 30rem;
 	width: 22rem;
 }
 .card:hover {
@@ -89,7 +89,6 @@
 	padding-top: 0.7rem;
 }
 i {
-
 	align-items: center;
 	border-radius: 50%;
 	cursor: pointer;
@@ -98,6 +97,9 @@ i {
 	height: 2.6rem;
 	justify-content: center;
 	width: 2.6rem;
+}
+.btn:hover, i:hover {
+    box-shadow: -1px 1px 1px rgba(0,0,0,0.25);
 }
 /* Variants */
 .card-text-over-media {
@@ -140,6 +142,8 @@ i {
 }
 /* Horizontal card with image and text */
 .card-horizontal , .card-horizontal img {
+	border-bottom-left-radius: 0.5rem;
+	border-top-right-radius: 0;
 	display: flex;
 	flex-direction: row;
 	height: 12rem;
@@ -156,7 +160,9 @@ i {
 	bottom: 0rem;
 	position: absolute;
 }
-
+.card-horizontal>.action-items-container>.btn-container>.btn {
+	color: var(--white);
+}
 .card-horizontal>.action-items-container>.icon-container {
 	padding-left: 7rem;
 }
