@@ -1,106 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Fontawesome Icons -->
-    <script src="https://kit.fontawesome.com/dd0d05bba7.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/dd0d05bba7.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- My stylesheets -->
 
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/components/Badge/badge.css">
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/components/Badge/badge.css" />
     <title>Pastel UI | Badges</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="wrapper">
-        <div class="heading">
-            <h1>Badge</h1>
-            <p>Badges are used alongside components like text, avatar and icons to display status of user or
-                notification numbers.</p>
+      <div class="heading">
+        <h1>Badge</h1>
+        <p>
+          Badges are used alongside components like text, avatar and icons to
+          display status of user or notification numbers.
+        </p>
+      </div>
+
+      <hr class="divider" />
+      <div class="sub-heading">
+        <h3>Avatar with a badge</h3>
+        <p>
+          Badge is used on an avatar to display the status of the user. The
+          <strong>badge</strong> class is used on the main figure class
+          alongside the <strong>avatar</strong> class.
+        </p>
+
+        <p>
+          You can use the <strong>avatar-badge</strong> class alongside the
+          status badge classes namely <strong>online</strong>,
+          <strong>busy</strong>, <strong>away</strong>, and
+          <strong>offline</strong> to get badges with respective status.
+        </p>
+      </div>
+
+      <div class="badges-wrapper">
+        <figure class="avatar badge">
+          <img
+            src="/images/avatar-img-2.jpg"
+            alt="avatar-image-2"
+            class="avatar-img"
+          />
+          <span class="avatar-badge online"></span>
+        </figure>
+
+        <figure class="avatar badge">
+          <img
+            src="/images/avatar-img-3.jpg"
+            alt="avatar-image-3"
+            class="avatar-img"
+          />
+          <span class="avatar-badge busy"></span>
+        </figure>
+
+        <figure class="avatar badge">
+          <img
+            src="/images/avatar-img-1.jpg"
+            alt="avatar-image-1"
+            class="avatar-img"
+          />
+          <span class="avatar-badge away"></span>
+        </figure>
+
+        <figure class="avatar badge">
+          <img
+            src="/images/avatar-img-2.jpg"
+            alt="avatar-image-2"
+            class="avatar-img"
+          />
+          <span class="avatar-badge offline"></span>
+        </figure>
+      </div>
+
+      <div class="code-wrapper">
+        <iframe
+          src="https://www.thiscodeworks.com/embed/61f7b4c6b50e540015bbae17"
+          style="width: 100%; height: 333px"
+          frameborder="0"
+        ></iframe>
+      </div>
+
+      <hr class="divider" />
+
+      <div class="sub-heading">
+        <h3>Icons with a badge</h3>
+        <p>
+          Icons also can contain badges above them to display number of items,
+          or number of notifications.
+        </p>
+        <p>
+          Use the <strong>badge</strong> class on the parent div tag. You can
+          use the <strong>icon-badge</strong> class on your icons to make badges
+          on an icon.
+        </p>
+      </div>
+
+      <div class="badges-wrapper">
+        <div class="icon-container badge">
+          <i class="fas fa-shopping-cart icon"></i>
+          <span class="icon-badge">5</span>
         </div>
 
-        <hr class="divider">
-        <div class="sub-heading">
-            <h3>Avatar with a badge</h3>
-            <p>Badge is used on an avatar to display the status of the user. The <strong>badge</strong> class is used on
-                the main figure class alongside the <strong>avatar</strong> class. </p>
-
-            <p> You can use the <strong>avatar-badge</strong> class alongside the status badge classes namely
-                <strong>online</strong>, <strong>busy</strong>, <strong>away</strong>, and <strong>offline</strong> to
-                get badges with respective status.</p>
+        <div class="icon-container badge">
+          <i class="fas fa-envelope icon"></i>
+          <span class="icon-badge">99+</span>
         </div>
 
-        <div class="badges-wrapper">
-            <figure class="avatar badge">
-                <img src="/images/avatar-img-2.jpg" alt="avatar-image-2" class="avatar-img" />
-                <span class="avatar-badge online"></span>
-
-            </figure>
-
-            <figure class="avatar badge">
-                <img src="/images/avatar-img-3.jpg" alt="avatar-image-3" class="avatar-img" />
-                <span class="avatar-badge busy"></span>
-
-            </figure>
-
-            <figure class="avatar badge">
-                <img src="/images/avatar-img-1.jpg" alt="avatar-image-1" class="avatar-img" />
-                <span class="avatar-badge away"></span>
-
-            </figure>
-
-            <figure class="avatar badge">
-                <img src="/images/avatar-img-2.jpg" alt="avatar-image-2" class="avatar-img" />
-                <span class="avatar-badge offline"></span>
-
-            </figure>
+        <div class="icon-container badge">
+          <i class="fas fa-users icon"></i>
+          <span class="icon-badge">2</span>
         </div>
 
-        <div class="code-wrapper">
-            <iframe src="https://www.thiscodeworks.com/embed/61f7b4c6b50e540015bbae17"
-                style="width: 100%; height: 333px;" frameborder="0"></iframe>
+        <div class="icon-container badge">
+          <i class="fas fa-heart icon"></i>
+          <span class="icon-badge">10</span>
         </div>
+      </div>
 
-        <hr class="divider">
-
-        <div class="sub-heading">
-            <h3>Icons with a badge</h3>
-            <p>Icons also can contain badges above them to display number of items, or number of notifications.</p>
-            <p>Use the <strong>badge</strong> class on the parent div tag. You can use the <strong>icon-badge</strong>
-                class on your icons to make badges on an icon. </p>
-        </div>
-
-        <div class="badges-wrapper">
-            <div class="icon-container badge">
-                <i class="fas fa-shopping-cart icon"></i>
-                <span class="icon-badge">5</span>
-            </div>
-
-            <div class="icon-container badge">
-                <i class="fas fa-envelope icon"></i>
-                <span class="icon-badge">99+</span>
-            </div>
-
-            <div class="icon-container badge">
-                <i class="fas fa-users icon"></i>
-                <span class="icon-badge">2</span>
-            </div>
-
-            <div class="icon-container badge">
-                <i class="fas fa-heart icon"></i>
-                <span class="icon-badge">10</span>
-            </div>
-        </div>
-
-        <div class="code-wrapper">
-            <iframe src="https://www.thiscodeworks.com/embed/61f7ba66b50e540015bbae1a" style="width: 100%; height: 333px;" frameborder="0"></iframe>
-        </div>
-
+      <div class="code-wrapper">
+        <iframe
+          src="https://www.thiscodeworks.com/embed/61f7ba66b50e540015bbae1a"
+          style="width: 100%; height: 333px"
+          frameborder="0"
+        ></iframe>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
