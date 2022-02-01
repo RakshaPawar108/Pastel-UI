@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fontawesome Icons -->
+    <script
+      src="https://kit.fontawesome.com/dd0d05bba7.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- My stylesheets -->
+
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/components/Input/input.css" />
+    <title>Pastel UI | Inputs</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="heading">
+        <h1>Inputs</h1>
+        <p>Inputs allow users to enter and edit text.</p>
+      </div>
+
+      <hr class="divider" />
+      <div class="sub-heading">
+        <h3>Basic Inputs</h3>
+        <p>
+          You can use the <strong>input-container</strong> class alongside the
+          respective variant classes namely <strong>standard</strong>,
+          <strong>outlined</strong>, and <strong>filled</strong> classes to get
+          the variants respectively.
+        </p>
+      </div>
+      <div class="inputs-wrapper">
+        <div class="input-container standard">
+          <input type="text" />
+          <label>Standard Input</label>
+        </div>
+
+        <div class="input-container outlined">
+          <input type="text" />
+          <label>Outlined Input</label>
+        </div>
+
+        <div class="input-container filled">
+          <input type="text" />
+          <label>Filled Input</label>
+        </div>
+      </div>
+
+      <div class="code-wrapper">
+        <iframe
+          src="https://www.thiscodeworks.com/embed/61f8ea301e1df40015379391"
+          style="width: 100%; height: 268px"
+          frameborder="0"
+        ></iframe>
+      </div>
+
+      <hr class="divider" />
+
+      <div class="sub-heading">
+        <h3>Validation Inputs</h3>
+        <p>
+          Inputs sometimes need to have validation messages on them to validate
+          user inputs. You can use the <strong>success</strong> or
+          <strong>error</strong> class with any of the above variants to get the
+          respective validation messages.
+        </p>
+      </div>
+
+      <div class="inputs-wrapper">
+        <div class="input-container standard success">
+          <input type="text" />
+          <label>Standard Input</label>
+          <small>This is success message.</small>
+        </div>
+
+        <div class="input-container standard error">
+          <input type="text" />
+          <label>Standard Input</label>
+          <small>This is error message.</small>
+        </div>
+      </div>
+
+      <div class="code-wrapper">
+        <iframe
+          src="https://www.thiscodeworks.com/embed/61f8f9bb1e1df400153793bf"
+          style="width: 100%; height: 229px"
+          frameborder="0"
+        ></iframe>
+      </div>
+    </div>
+  </body>
+</html>
