@@ -22,6 +22,7 @@
 .list-item {
 	align-items: center;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 }
 .basic {
@@ -49,4 +50,58 @@
 	background-color: var(--primary-color);
 	color: var(--secondary-color);
 	font-weight: 600;
+}
+/* Notification List */
+.notification-list {
+	background-color: var(--secondary-color);
+	border: 2px solid var(--primary-color);
+	width: fit-content;
+}
+.notification-header {
+	border-bottom: 2px solid var(--primary-color);
+	display: flex;
+	justify-content: space-between;
+	padding: 1.5rem;
+}
+.notification-header h1 {
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+.notification-header i {
+	cursor: pointer;
+	font-size: 1.5rem;
+}
+.list-notifications {
+	border: none;
+	padding: 0;
+	width: fit-content;
+}
+.list-notifications .list-item {
+	align-items: flex-start;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+.list-notifications .list-item:hover,
+.notification-header i:hover,
+.notification-footer span:hover {
+	background-color: var(--melon);
+	cursor: pointer;
+}
+.list-notifications .list-item span {
+	font-size: 1.2rem;
+	font-weight: 500;
+}
+.list-notifications .list-item small {
+	color: var(--dark-gray);
+	font-size: 1rem;
+}
+.notification-footer {
+	border-top: 2px solid var(--primary-color);
+	cursor: pointer;
+	display: flex;
+	padding: 1.2rem;
+}
+.notification-footer span {
+	padding: 0.5rem;
 }
