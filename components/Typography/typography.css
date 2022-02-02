@@ -1,0 +1,30 @@
+.typo-wrapper {
+	align-items: flex-start;
+	align-self: center;
+	background-color: var(--white);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	justify-self: center;
+	margin: 2rem;
+	padding: 2rem;
+	width: 80%;
+}
+.hl1 {
+	font-size: 48px;
+	line-height: 64px;
+}
+.hl2 {
+	font-size: 32px;
+	line-height: 40px;
+}
+.hl3 {
+	font-size: 24px;
+	line-height: 32px;
+}
+.centered-text {
+	text-align: center;
+}
+.grey-text {
+	color: var(--light-gray);
+}
