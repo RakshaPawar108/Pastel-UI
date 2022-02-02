@@ -1,0 +1,39 @@
+.ratings-wrapper {
+	align-items: center;
+	align-self: center;
+	background-color: var(--white);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 2rem;
+	padding: 2rem;
+	width: 80%;
+}
+.stars-container {
+	background-color: var(--default-color);
+	padding: 2rem;
+}
+.stars-container input {
+	display: none;
+}
+.stars-container label {
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	color: var(--dark-gray);
+	cursor: pointer;
+	float: right;
+	font-size: 2.5rem;
+	padding: 0.5rem;
+	transition: all 0.5s ease;
+}
+input:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~ label,
+input:checked ~ label {
+	color: var(--golden);
+}
+input#star-5:checked ~ label {
+	color: var(--golden);
+	text-shadow: 0 0 15px var(--pastel-yellow);
+}
