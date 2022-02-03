@@ -1,21 +1,28 @@
-const snackbarBaseline = document.querySelector(".btn-action-baseline");
-const snackbarLeading = document.querySelector(".btn-action-leading");
+const snackbarBaselineBtn = document.querySelector(".btn-action-baseline");
+const snackbarLeadingBtn = document.querySelector(".btn-action-leading");
+const snackbarBaseline = document.querySelector(".snackbar-baseline");
+const snackbarLeading = document.querySelector(".snackbar-leading");
 
-snackbarBaseline.addEventListener("click", () => {
-  document.querySelector(".snackbar-baseline").classList.remove("hide");
-  document.querySelector(".snackbar-leading").classList.add("hide");
-  closeSnackbar();
+snackbarBaselineBtn.addEventListener("click", () => {
+  snackbarBaseline.classList.remove("hide");
+  snackbarLeading.classList.add("hide");
+  closeSnackbar("baseline");
 });
 
-snackbarLeading.addEventListener("click", () => {
-  document.querySelector(".snackbar-baseline").classList.add("hide");
-  document.querySelector(".snackbar-leading").classList.remove("hide");
-  closeSnackbar();
+snackbarLeadingBtn.addEventListener("click", () => {
+  snackbarBaseline.classList.add("hide");
+  snackbarLeading.classList.remove("hide");
+  closeSnackbar("leading");
 });
 
-const closeSnackbar = () => {
-  setTimeout(() => {
-    document.querySelector(".snackbar-baseline").classList.add("hide");
-    document.querySelector(".snackbar-leading").classList.add("hide");
-  }, 3000);
+const closeSnackbar = (snackbarType) => {
+  if (snackbarType === "baseline") {
+    setTimeout(() => {
+      snackbarBaseline.classList.add("hide");
+    }, 3000);
+  } else if (snackbarType === "leading") {
+    setTimeout(() => {
+      snackbarLeading.classList.add("hide");
+    }, 3000);
+  }
 };
