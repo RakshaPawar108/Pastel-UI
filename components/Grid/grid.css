@@ -1,0 +1,67 @@
+.grids-wrapper {
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  justify-self: center;
+  align-self: center;
+  padding: 2rem;
+  width: 80%;
+  min-width: fit-content;
+  margin: 2rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+  width: 100%;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-holy-grail {
+  grid-template-areas:
+    "header header header"
+    "nav main side"
+    "footer footer footer";
+
+  grid-template-columns: 200px 1fr 200px;
+  grid-template-rows: auto 1fr auto;
+}
+.col-1,
+.col-2,
+.col-3,
+.grid-holy-grail header,
+.grid-holy-grail nav,
+.grid-holy-grail main,
+.grid-holy-grail aside,
+.grid-holy-grail footer {
+  background-color: var(--light-purple);
+  padding: 2rem;
+  color: var(--white);
+  font-size: 1.2rem;
+}
+
+.grid-holy-grail header {
+  grid-area: header;
+}
+
+.grid-holy-grail nav {
+  grid-area: nav;
+}
+.grid-holy-grail main {
+  grid-area: main;
+}
+.grid-holy-grail aside {
+  grid-area: side;
+}
+.grid-holy-grail footer {
+  grid-area: footer;
+}
