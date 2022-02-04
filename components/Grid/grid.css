@@ -33,11 +33,7 @@
 .col-1,
 .col-2,
 .col-3,
-.grid-holy-grail header,
-.grid-holy-grail nav,
-.grid-holy-grail main,
-.grid-holy-grail aside,
-.grid-holy-grail footer {
+.grid-holy-grail > * {
   background-color: var(--light-purple);
   color: var(--white);
   font-size: 1.2rem;
