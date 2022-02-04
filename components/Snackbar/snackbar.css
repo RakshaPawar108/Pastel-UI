@@ -84,6 +84,6 @@ i,
   margin: 0;
   transform: translateY(-50%);
 }
-.hide {
+.hide-snackbar {
   display: none;
 }

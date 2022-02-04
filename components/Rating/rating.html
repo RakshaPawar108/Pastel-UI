@@ -17,42 +17,129 @@
     <title>Pastel UI | Rating</title>
   </head>
   <body>
-    <div class="wrapper">
-      <div class="heading">
-        <h1>Rating</h1>
-        <p>
-          Ratings provide insight regarding others' opinions and experiences,
-          and can allow the user to submit a rating of their own.
-        </p>
-      </div>
+    <!-- Header starts -->
+    <header class="header">
+      <div class="header-brand"><a href="/index.html">Pastel UI</a></div>
 
-      <hr class="divider" />
-      <div class="sub-heading">
-        <h3>Basic Rating</h3>
-        <p></p>
-      </div>
-      <div class="ratings-wrapper">
-        <div class="stars-container">
-          <input type="radio" name="rating" id="star-5" />
-          <label for="star-5" class="fas fa-star"></label>
-          <input type="radio" name="rating" id="star-4" />
-          <label for="star-4" class="fas fa-star"></label>
-          <input type="radio" name="rating" id="star-3" />
-          <label for="star-3" class="fas fa-star"></label>
-          <input type="radio" name="rating" id="star-2" />
-          <label for="star-2" class="fas fa-star"></label>
-          <input type="radio" name="rating" id="star-1" />
-          <label for="star-1" class="fas fa-star"></label>
+      <button class="navbar-open-btn">
+        <i class="fas fa-2x fa-bars"></i>
+      </button>
+      <nav class="navbar hide">
+        <ul class="nav-links">
+          <li class="nav-item"><a href="/index.html">Home</a></li>
+          <li class="nav-item"><a href="">Docs</a></li>
+          <li class="nav-item">
+            <a href="https://github.com/RakshaPawar108/Pastel-UI"
+              ><i class="fab fa-github"></i>Contribute</a
+            >
+          </li>
+        </ul>
+        <button class="navbar-close-btn">
+          <i class="far fa-2x fa-times-circle"></i>
+        </button>
+      </nav>
+    </header>
+    <!-- Header ends -->
+    <div class="wrapper">
+      <!-- Sidebar begins -->
+      <aside class="aside">
+        <h4>Get Started</h4>
+        <ul>
+          <li>
+            <a href="/components/Introduction/introduction.html"
+              >Introduction</a
+            >
+          </li>
+        </ul>
+        <h4>Components</h4>
+        <ul>
+          <li>
+            <a href="/components/Alerts/alert.html">Alert</a>
+          </li>
+          <li><a href="/components/Avatar/avatar.html">Avatar</a></li>
+          <li><a href="/components/Badge/badge.html">Badge</a></li>
+          <li><a href="/components/Buttons/button.html">Button</a></li>
+          <li><a href="/components/Cards/card.html">Card</a></li>
+          <li><a href="/components/Image/image.html">Image</a></li>
+          <li><a href="/components/Input/input.html">Input</a></li>
+          <li><a href="/components/Lists/list.html">List</a></li>
+          <li><a href="/components/Modal/modal.html">Modal</a></li>
+          <li>
+            <a href="/components/Navigation/navigation.html ">Navigation</a>
+          </li>
+          <li class="active">
+            <a href="/components/Rating/rating.html">Rating</a>
+          </li>
+          <li><a href="/components/Grid/grid.html">Simplified Grids</a></li>
+          <li><a href="/components/Snackbar/snackbar.html">Snackbar</a></li>
+          <li>
+            <a href="/components/Typography/typography.html">Typography</a>
+          </li>
+        </ul>
+      </aside>
+      <!-- Sidebar ends -->
+
+      <div class="section">
+        <div class="heading">
+          <h1>Rating</h1>
+          <p>
+            Ratings provide insight regarding others' opinions and experiences,
+            and can allow the user to submit a rating of their own.
+          </p>
+        </div>
+
+        <hr class="divider" />
+        <div class="sub-heading">
+          <h3>Basic Rating</h3>
+          <p></p>
+        </div>
+        <div class="ratings-wrapper">
+          <div class="stars-container">
+            <input type="radio" name="rating" id="star-5" />
+            <label for="star-5" class="fas fa-star"></label>
+            <input type="radio" name="rating" id="star-4" />
+            <label for="star-4" class="fas fa-star"></label>
+            <input type="radio" name="rating" id="star-3" />
+            <label for="star-3" class="fas fa-star"></label>
+            <input type="radio" name="rating" id="star-2" />
+            <label for="star-2" class="fas fa-star"></label>
+            <input type="radio" name="rating" id="star-1" />
+            <label for="star-1" class="fas fa-star"></label>
+          </div>
+        </div>
+
+        <div class="code-wrapper">
+          <iframe
+            src="https://www.thiscodeworks.com/embed/61fa855cb783be0015bbaeb1"
+            style="width: 100%; height: 242px"
+            frameborder="0"
+          ></iframe>
         </div>
       </div>
-
-      <div class="code-wrapper">
-        <iframe
-          src="https://www.thiscodeworks.com/embed/61fa855cb783be0015bbaeb1"
-          style="width: 100%; height: 242px"
-          frameborder="0"
-        ></iframe>
-      </div>
     </div>
+
+    <!-- Footer starts -->
+    <footer class="footer">
+      <div class="credits">
+        <i class="fas fa-code"></i> with <i class="fas fa-heart"></i> by Raksha
+        Pawar
+      </div>
+
+      <div class="social-links">
+        <a href="https://twitter.com/rakshapawar108"
+          ><i class="fab fa-twitter" title="Twitter"></i
+        ></a>
+        <a href="https://github.com/RakshaPawar108"
+          ><i class="fab fa-github" title="Github"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/rakshapawar/"
+          ><i class="fab fa-linkedin" title="LinkedIn"></i
+        ></a>
+      </div>
+    </footer>
+
+    <!-- Footer Ends -->
+
+    <script src="/js/navbar.js"></script>
   </body>
 </html>

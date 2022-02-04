@@ -17,147 +17,236 @@
     <title>Pastel UI | Lists</title>
   </head>
   <body>
+    <!-- Header starts -->
+    <header class="header">
+      <div class="header-brand"><a href="/index.html">Pastel UI</a></div>
+
+      <button class="navbar-open-btn">
+        <i class="fas fa-2x fa-bars"></i>
+      </button>
+      <nav class="navbar hide">
+        <ul class="nav-links">
+          <li class="nav-item"><a href="/index.html">Home</a></li>
+          <li class="nav-item"><a href="">Docs</a></li>
+          <li class="nav-item">
+            <a href="https://github.com/RakshaPawar108/Pastel-UI"
+              ><i class="fab fa-github"></i>Contribute</a
+            >
+          </li>
+        </ul>
+        <button class="navbar-close-btn">
+          <i class="far fa-2x fa-times-circle"></i>
+        </button>
+      </nav>
+    </header>
+    <!-- Header ends -->
     <div class="wrapper">
-      <div class="heading">
-        <h1>Lists</h1>
-        <p>
-          Lists are flexible and powerful component for displaying a series of
-          content.
-        </p>
-      </div>
-
-      <hr class="divider" />
-      <div class="sub-heading">
-        <h3>Basic Lists</h3>
-        <p>
-          The most basic list is an unordered list with list items and proper
-          classes on it.
-        </p>
-        <p>
-          You can get a basic list by using the <strong>list</strong> class on
-          the ul tag and <strong>list-item</strong> class alongside the
-          <strong>basic</strong> class on your list item tags.
-        </p>
-      </div>
-
-      <div class="lists-wrapper">
-        <ul class="list">
-          <li class="list-item basic">List Item 1</li>
-          <li class="list-item basic">List Item 2</li>
-          <li class="list-item basic">List Item 3</li>
-          <li class="list-item basic">List Item 4</li>
-          <li class="list-item basic">List Item 5</li>
-          <li class="list-item basic">List Item 6</li>
+      <!-- Sidebar begins -->
+      <aside class="aside">
+        <h4>Get Started</h4>
+        <ul>
+          <li>
+            <a href="/components/Introduction/introduction.html"
+              >Introduction</a
+            >
+          </li>
         </ul>
-      </div>
-
-      <div class="code-wrapper">
-        <iframe
-          src="https://www.thiscodeworks.com/embed/61fa229cb783be0015bbae27"
-          style="width: 100%; height: 190px"
-          frameborder="0"
-        ></iframe>
-      </div>
-
-      <hr class="divider" />
-
-      <div class="sub-heading">
-        <h3>Stacked Lists</h3>
-        <p>
-          Stacked Lists are a collection of items with spaces in between each
-          item.
-        </p>
-        <p>
-          You can make use of stacked lists by using the
-          <strong>list-stacked</strong> class alongside the
-          <strong>list</strong> class on the ul tag and
-          <strong>stacked</strong> class alongside the
-          <strong>list-item</strong> class on the li tag.
-        </p>
-      </div>
-
-      <div class="lists-wrapper">
-        <ul class="list list-stacked">
-          <li class="list-item stacked">List Item 1</li>
-          <li class="list-item stacked">List Item 2</li>
-          <li class="list-item stacked">List Item 3</li>
-          <li class="list-item stacked">List Item 4</li>
-          <li class="list-item stacked">List Item 5</li>
-          <li class="list-item stacked">List Item 6</li>
+        <h4>Components</h4>
+        <ul>
+          <li>
+            <a href="/components/Alerts/alert.html">Alert</a>
+          </li>
+          <li><a href="/components/Avatar/avatar.html">Avatar</a></li>
+          <li><a href="/components/Badge/badge.html">Badge</a></li>
+          <li><a href="/components/Buttons/button.html">Button</a></li>
+          <li><a href="/components/Cards/card.html">Card</a></li>
+          <li><a href="/components/Image/image.html">Image</a></li>
+          <li><a href="/components/Input/input.html">Input</a></li>
+          <li class="active"><a href="/components/Lists/list.html">List</a></li>
+          <li><a href="/components/Modal/modal.html">Modal</a></li>
+          <li>
+            <a href="/components/Navigation/navigation.html ">Navigation</a>
+          </li>
+          <li><a href="/components/Rating/rating.html">Rating</a></li>
+          <li><a href="/components/Grid/grid.html">Simplified Grids</a></li>
+          <li><a href="/components/Snackbar/snackbar.html">Snackbar</a></li>
+          <li>
+            <a href="/components/Typography/typography.html">Typography</a>
+          </li>
         </ul>
-      </div>
+      </aside>
+      <!-- Sidebar ends -->
 
-      <div class="code-wrapper">
-        <iframe
-          src="https://www.thiscodeworks.com/embed/61fa2662b783be0015bbae2b"
-          style="width: 100%; height: 190px"
-          frameborder="0"
-        ></iframe>
-      </div>
+      <div class="section">
+        <div class="heading">
+          <h1>Lists</h1>
+          <p>
+            Lists are flexible and powerful component for displaying a series of
+            content.
+          </p>
+        </div>
 
-      <hr class="divider" />
+        <hr class="divider" />
+        <div class="sub-heading">
+          <h3>Basic Lists</h3>
+          <p>
+            The most basic list is an unordered list with list items and proper
+            classes on it.
+          </p>
+          <p>
+            You can get a basic list by using the <strong>list</strong> class on
+            the ul tag and <strong>list-item</strong> class alongside the
+            <strong>basic</strong> class on your list item tags.
+          </p>
+        </div>
 
-      <div class="sub-heading">
-        <h3>Active Lists</h3>
-        <p>
-          You can make a list item as active by using the
-          <strong>active</strong> class on any list item alongside any of the
-          above mentioned list types.
-        </p>
-      </div>
+        <div class="lists-wrapper">
+          <ul class="list">
+            <li class="list-item basic">List Item 1</li>
+            <li class="list-item basic">List Item 2</li>
+            <li class="list-item basic">List Item 3</li>
+            <li class="list-item basic">List Item 4</li>
+            <li class="list-item basic">List Item 5</li>
+            <li class="list-item basic">List Item 6</li>
+          </ul>
+        </div>
 
-      <div class="lists-wrapper">
-        <ul class="list">
-          <li class="list-item basic active">List Item 1</li>
-          <li class="list-item basic">List Item 2</li>
-          <li class="list-item basic">List Item 3</li>
-        </ul>
-      </div>
+        <div class="code-wrapper">
+          <iframe
+            src="https://www.thiscodeworks.com/embed/61fa229cb783be0015bbae27"
+            style="width: 100%; height: 190px"
+            frameborder="0"
+          ></iframe>
+        </div>
 
-      <div class="code-wrapper">
-        <iframe
-          src="https://www.thiscodeworks.com/embed/61fa27f5b783be0015bbae2c"
-          style="width: 100%; height: 151px"
-          frameborder="0"
-        ></iframe>
-      </div>
+        <hr class="divider" />
 
-      <hr class="divider" />
-      <div class="sub-heading">
-        <h3>Notification List</h3>
-      </div>
+        <div class="sub-heading">
+          <h3>Stacked Lists</h3>
+          <p>
+            Stacked Lists are a collection of items with spaces in between each
+            item.
+          </p>
+          <p>
+            You can make use of stacked lists by using the
+            <strong>list-stacked</strong> class alongside the
+            <strong>list</strong> class on the ul tag and
+            <strong>stacked</strong> class alongside the
+            <strong>list-item</strong> class on the li tag.
+          </p>
+        </div>
 
-      <div class="lists-wrapper">
-        <div class="notification-list">
-          <div class="notification-header">
-            <h1>Notifications</h1>
-            <i class="fas fa-ellipsis-v icon"></i>
-          </div>
-          <div class="notifications">
-            <ul class="list list-notifications">
-              <li class="list-item basic">
-                <span class="notif-title">Recent tweet from ABC</span>
-                <small>just now</small>
-              </li>
-              <li class="list-item basic">
-                <span class="notif-title">PQR and XYZ liked your reply</span>
-                <small>25 mins ago</small>
-              </li>
-              <li class="list-item basic">
-                <span class="notif-title">LMN followed you</span>
-                <small>30th Jan</small>
-              </li>
-            </ul>
-          </div>
-          <div class="notification-footer">
-            <span>Mark all as read.</span>
+        <div class="lists-wrapper">
+          <ul class="list list-stacked">
+            <li class="list-item stacked">List Item 1</li>
+            <li class="list-item stacked">List Item 2</li>
+            <li class="list-item stacked">List Item 3</li>
+            <li class="list-item stacked">List Item 4</li>
+            <li class="list-item stacked">List Item 5</li>
+            <li class="list-item stacked">List Item 6</li>
+          </ul>
+        </div>
+
+        <div class="code-wrapper">
+          <iframe
+            src="https://www.thiscodeworks.com/embed/61fa2662b783be0015bbae2b"
+            style="width: 100%; height: 190px"
+            frameborder="0"
+          ></iframe>
+        </div>
+
+        <hr class="divider" />
+
+        <div class="sub-heading">
+          <h3>Active Lists</h3>
+          <p>
+            You can make a list item as active by using the
+            <strong>active</strong> class on any list item alongside any of the
+            above mentioned list types.
+          </p>
+        </div>
+
+        <div class="lists-wrapper">
+          <ul class="list">
+            <li class="list-item basic active">List Item 1</li>
+            <li class="list-item basic">List Item 2</li>
+            <li class="list-item basic">List Item 3</li>
+          </ul>
+        </div>
+
+        <div class="code-wrapper">
+          <iframe
+            src="https://www.thiscodeworks.com/embed/61fa27f5b783be0015bbae2c"
+            style="width: 100%; height: 151px"
+            frameborder="0"
+          ></iframe>
+        </div>
+
+        <hr class="divider" />
+        <div class="sub-heading">
+          <h3>Notification List</h3>
+        </div>
+
+        <div class="lists-wrapper">
+          <div class="notification-list">
+            <div class="notification-header">
+              <h1>Notifications</h1>
+              <i class="fas fa-ellipsis-v icon"></i>
+            </div>
+            <div class="notifications">
+              <ul class="list list-notifications">
+                <li class="list-item basic">
+                  <span class="notif-title">Recent tweet from ABC</span>
+                  <small>just now</small>
+                </li>
+                <li class="list-item basic">
+                  <span class="notif-title">PQR and XYZ liked your reply</span>
+                  <small>25 mins ago</small>
+                </li>
+                <li class="list-item basic">
+                  <span class="notif-title">LMN followed you</span>
+                  <small>30th Jan</small>
+                </li>
+              </ul>
+            </div>
+            <div class="notification-footer">
+              <span>Mark all as read.</span>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="code-wrapper">
-          <iframe src="https://www.thiscodeworks.com/embed/61fa3e0fb783be0015bbae5f" style="width: 100%; height: 411px;" frameborder="0"></iframe>
+        <div class="code-wrapper">
+          <iframe
+            src="https://www.thiscodeworks.com/embed/61fa3e0fb783be0015bbae5f"
+            style="width: 100%; height: 411px"
+            frameborder="0"
+          ></iframe>
+        </div>
       </div>
     </div>
+
+    <!-- Footer starts -->
+    <footer class="footer">
+      <div class="credits">
+        <i class="fas fa-code"></i> with <i class="fas fa-heart"></i> by Raksha
+        Pawar
+      </div>
+
+      <div class="social-links">
+        <a href="https://twitter.com/rakshapawar108"
+          ><i class="fab fa-twitter" title="Twitter"></i
+        ></a>
+        <a href="https://github.com/RakshaPawar108"
+          ><i class="fab fa-github" title="Github"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/rakshapawar/"
+          ><i class="fab fa-linkedin" title="LinkedIn"></i
+        ></a>
+      </div>
+    </footer>
+
+    <!-- Footer Ends -->
+
+    <script src="/js/navbar.js"></script>
   </body>
 </html>

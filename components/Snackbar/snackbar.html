@@ -17,78 +17,162 @@
     <title>Pastel UI | Snackbar</title>
   </head>
   <body>
+    <!-- Header starts -->
+    <header class="header">
+      <div class="header-brand"><a href="/index.html">Pastel UI</a></div>
+
+      <button class="navbar-open-btn">
+        <i class="fas fa-2x fa-bars"></i>
+      </button>
+      <nav class="navbar hide">
+        <ul class="nav-links">
+          <li class="nav-item"><a href="/index.html">Home</a></li>
+          <li class="nav-item"><a href="">Docs</a></li>
+          <li class="nav-item">
+            <a href="https://github.com/RakshaPawar108/Pastel-UI"
+              ><i class="fab fa-github"></i>Contribute</a
+            >
+          </li>
+        </ul>
+        <button class="navbar-close-btn">
+          <i class="far fa-2x fa-times-circle"></i>
+        </button>
+      </nav>
+    </header>
+    <!-- Header ends -->
+
     <div class="wrapper">
-      <div class="heading">
-        <h1>Snackbar</h1>
-        <p>
-          Snackbars provide brief messages about app processes at the bottom of
-          the screen. They appear temporarily, towards the bottom of the screen.
-          They shouldn't interrupt the user experience, and they don't require
-          user input to disappear.
-        </p>
-      </div>
+      <!-- Sidebar begins -->
+      <aside class="aside">
+        <h4>Get Started</h4>
+        <ul>
+          <li>
+            <a href="/components/Introduction/introduction.html"
+              >Introduction</a
+            >
+          </li>
+        </ul>
+        <h4>Components</h4>
+        <ul>
+          <li><a href="/components/Alerts/alert.html">Alert</a></li>
+          <li><a href="/components/Avatar/avatar.html">Avatar</a></li>
+          <li><a href="/components/Badge/badge.html">Badge</a></li>
+          <li><a href="/components/Buttons/button.html">Button</a></li>
+          <li><a href="/components/Cards/card.html">Card</a></li>
+          <li><a href="/components/Image/image.html">Image</a></li>
+          <li><a href="/components/Input/input.html">Input</a></li>
+          <li><a href="/components/Lists/list.html">List</a></li>
+          <li><a href="/components/Modal/modal.html">Modal</a></li>
+          <li>
+            <a href="/components/Navigation/navigation.html ">Navigation</a>
+          </li>
+          <li><a href="/components/Rating/rating.html">Rating</a></li>
+          <li><a href="/components/Grid/grid.html">Simplified Grids</a></li>
+          <li class="active">
+            <a href="/components/Snackbar/snackbar.html">Snackbar</a>
+          </li>
+          <li>
+            <a href="/components/Typography/typography.html">Typography</a>
+          </li>
+        </ul>
+      </aside>
+      <!-- Sidebar ends -->
 
-      <hr class="divider" />
-
-      <div class="sub-heading">
-        <h3>Snackbar Types</h3>
-        <p>
-          Snackbar is of 2 types: Baseline and Leading. The Baseline snackbar
-          gets displayed at the bottom center of the screen.The Leading snackbar
-          gets displayed at the bottom left of the screen.
-        </p>
-
-        <p>
-          Click on the buttons below to see the respective types of snackbar.
-        </p>
-      </div>
-
-      <div class="snackbar-wrapper">
-        <button class="btn-action btn-action-baseline">Baseline</button
-        ><button class="btn-action btn-action-leading">Leading</button>
-      </div>
-
-      <div class="sub-heading">
-        <h3>HTML for Snackbar</h3>
-      </div>
-
-      <div class="code-wrapper">
-        <iframe
-          src="https://www.thiscodeworks.com/embed/61fb732d6ab14d0015c32cff"
-          style="width: 100%; height: 281px"
-          frameborder="0"
-        ></iframe>
-      </div>
-
-      <div class="sub-heading">
-        <h3>Javascript for closing snackbar</h3>
-      </div>
-
-      <div class="code-wrapper">
-        <iframe
-          src="https://www.thiscodeworks.com/embed/61fb73846ab14d0015c32d00"
-          style="width: 100%; height: 164px"
-          frameborder="0"
-        ></iframe>
-      </div>
-
-      <div class="snackbar snackbar-baseline hide">
-        Can't send photo. Retry in 5 seconds.
-        <button class="btn-snackbar">Retry</button>
-        <div class="close-icon">
-          <i class="fa fa-times"></i>
+      <div class="section">
+        <div class="heading">
+          <h1>Snackbar</h1>
+          <p>
+            Snackbars provide brief messages about app processes at the bottom
+            of the screen. They appear temporarily, towards the bottom of the
+            screen. They shouldn't interrupt the user experience, and they don't
+            require user input to disappear.
+          </p>
         </div>
-      </div>
 
-      <div class="snackbar snackbar-leading hide">
-        Your photo has been archived.
-        <button class="btn-snackbar">Undo</button>
-        <div class="close-icon">
-          <i class="fa fa-times"></i>
+        <hr class="divider" />
+
+        <div class="sub-heading">
+          <h3>Snackbar Types</h3>
+          <p>
+            Snackbar is of 2 types: Baseline and Leading. The Baseline snackbar
+            gets displayed at the bottom center of the screen.The Leading
+            snackbar gets displayed at the bottom left of the screen.
+          </p>
+
+          <p>
+            Click on the buttons below to see the respective types of snackbar.
+          </p>
+        </div>
+
+        <div class="snackbar-wrapper">
+          <button class="btn-action btn-action-baseline">Baseline</button
+          ><button class="btn-action btn-action-leading">Leading</button>
+        </div>
+
+        <div class="sub-heading">
+          <h3>HTML for Snackbar</h3>
+        </div>
+
+        <div class="code-wrapper">
+          <iframe
+            src="https://www.thiscodeworks.com/embed/61fb732d6ab14d0015c32cff"
+            style="width: 100%; height: 281px"
+            frameborder="0"
+          ></iframe>
+        </div>
+
+        <div class="sub-heading">
+          <h3>Javascript for closing snackbar</h3>
+        </div>
+
+        <div class="code-wrapper">
+          <iframe
+            src="https://www.thiscodeworks.com/embed/61fb73846ab14d0015c32d00"
+            style="width: 100%; height: 164px"
+            frameborder="0"
+          ></iframe>
+        </div>
+        <div class="snackbar snackbar-baseline hide-snackbar">
+          Can't send photo. Retry in 5 seconds.
+          <button class="btn-snackbar">Retry</button>
+          <div class="close-icon">
+            <i class="fa fa-times"></i>
+          </div>
+        </div>
+
+        <div class="snackbar snackbar-leading hide-snackbar">
+          Your photo has been archived.
+          <button class="btn-snackbar">Undo</button>
+          <div class="close-icon">
+            <i class="fa fa-times"></i>
+          </div>
         </div>
       </div>
     </div>
 
+    <!-- Footer starts -->
+    <footer class="footer">
+      <div class="credits">
+        <i class="fas fa-code"></i> with <i class="fas fa-heart"></i> by Raksha
+        Pawar
+      </div>
+
+      <div class="social-links">
+        <a href="https://twitter.com/rakshapawar108"
+          ><i class="fab fa-twitter" title="Twitter"></i
+        ></a>
+        <a href="https://github.com/RakshaPawar108"
+          ><i class="fab fa-github" title="Github"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/rakshapawar/"
+          ><i class="fab fa-linkedin" title="LinkedIn"></i
+        ></a>
+      </div>
+    </footer>
+
+    <!-- Footer Ends -->
+
+    <script src="/js/navbar.js"></script>
     <script src="/components/Snackbar/snackbar.js"></script>
   </body>
 </html>
