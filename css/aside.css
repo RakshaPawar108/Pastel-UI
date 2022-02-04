@@ -1,0 +1,25 @@
+.aside {
+  flex-basis: 20%;
+  margin-right: 1rem;
+}
+
+.aside h4 {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+
+.aside li {
+  font-size: 1.2rem;
+  padding: 0.7rem;
+  width: 100%;
+}
+
+.aside li:hover {
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.aside li.active {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}

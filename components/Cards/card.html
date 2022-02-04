@@ -18,426 +18,512 @@
   </head>
 
   <body>
+    <!-- Header starts -->
+    <header class="header">
+      <div class="header-brand"><a href="/index.html">Pastel UI</a></div>
+
+      <button class="navbar-open-btn">
+        <i class="fas fa-2x fa-bars"></i>
+      </button>
+      <nav class="navbar hide">
+        <ul class="nav-links">
+          <li class="nav-item"><a href="/index.html">Home</a></li>
+          <li class="nav-item">
+            <a href="/components/Alerts/alert.html">Docs</a>
+          </li>
+          <li class="nav-item">
+            <a href="https://github.com/RakshaPawar108/Pastel-UI"
+              ><i class="fab fa-github"></i>Contribute</a
+            >
+          </li>
+        </ul>
+        <button class="navbar-close-btn">
+          <i class="far fa-2x fa-times-circle"></i>
+        </button>
+      </nav>
+    </header>
+    <!-- Header ends -->
+
     <div class="wrapper">
-      <div class="heading">
-        <h1>Cards</h1>
-        <p>
-          Cards contain content and actions on a single topic or subject. They
-          should be easy to scan for relevant and actionable information.
-          Elements like text and images, should be placed on them in a way that
-          clearly indicates hierarchy.
-        </p>
-      </div>
+      <!-- Sidebar begins -->
+      <aside class="aside">
+        <h4>Get Started</h4>
+        <ul>
+          <li>
+            <a href="/components/Introduction/introduction.html"
+              >Introduction</a
+            >
+          </li>
+        </ul>
+        <h4>Components</h4>
+        <ul>
+          <li><a href="/components/Alerts/alert.html">Alert</a></li>
+          <li><a href="/components/Avatar/avatar.html">Avatar</a></li>
+          <li><a href="/components/Badge/badge.html">Badge</a></li>
+          <li><a href="/components/Buttons/button.html">Button</a></li>
+          <li class="active"><a href="/components/Cards/card.html">Card</a></li>
+          <li><a href="/components/Image/image.html">Image</a></li>
+          <li><a href="/components/Input/input.html">Input</a></li>
+          <li><a href="/components/Lists/list.html">List</a></li>
+          <li><a href="/components/Modal/modal.html">Modal</a></li>
+          <li>
+            <a href="/components/Navigation/navigation.html ">Navigation</a>
+          </li>
+          <li><a href="/components/Rating/rating.html">Rating</a></li>
+          <li><a href="/components/Grid/grid.html">Simplified Grids</a></li>
+          <li><a href="/components/Snackbar/snackbar.html">Snackbar</a></li>
+          <li>
+            <a href="/components/Typography/typography.html">Typography</a>
+          </li>
+        </ul>
+      </aside>
+      <!-- Sidebar ends -->
 
-      <hr class="divider" />
-      <div class="sub-heading">
-        <h3>Basic Card</h3>
-        <p>
-          Use the <strong>card-basic</strong> class along with the
-          <strong>card</strong> class on your div to get a basic card design.
-        </p>
-      </div>
+      <div class="section">
+        <div class="heading">
+          <h1>Cards</h1>
+          <p>
+            Cards contain content and actions on a single topic or subject. They
+            should be easy to scan for relevant and actionable information.
+            Elements like text and images, should be placed on them in a way
+            that clearly indicates hierarchy.
+          </p>
+        </div>
 
-      <div class="cards-wrapper">
-        <div class="card card-basic">
-          <div class="image-container">
-            <img src="/images/card-image.jpg" alt="Card image" />
-          </div>
-          <div class="content-container">
-            <h1>Cutest Dogs Ever</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,
-              beatae. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Quia dolor obcaecati possimus laborum? Ea numquam cum iste est
-              eum. Ipsa.
-            </p>
-          </div>
-          <div class="action-items-container">
-            <div class="btn-container">
-              <button class="btn">Read</button>
-              <button class="btn">Bookmark</button>
+        <hr class="divider" />
+        <div class="sub-heading">
+          <h3>Basic Card</h3>
+          <p>
+            Use the <strong>card-basic</strong> class along with the
+            <strong>card</strong> class on your div to get a basic card design.
+          </p>
+        </div>
+
+        <div class="cards-wrapper">
+          <div class="card card-basic">
+            <div class="image-container">
+              <img src="/images/card-image.jpg" alt="Card image" />
             </div>
-            <div class="icon-container">
-              <i class="far fa-heart heart-icon"></i>
-              <i class="fas fa-share-alt share-icon"></i>
-              <i class="fas fa-ellipsis-v ellipsis-icon"></i>
+            <div class="content-container">
+              <h1>Cutest Dogs Ever</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,
+                beatae. Lorem ipsum dolor sit amet consectetur, adipisicing
+                elit. Quia dolor obcaecati possimus laborum? Ea numquam cum iste
+                est eum. Ipsa.
+              </p>
+            </div>
+            <div class="action-items-container">
+              <div class="btn-container">
+                <button class="btn">Read</button>
+                <button class="btn">Bookmark</button>
+              </div>
+              <div class="icon-container">
+                <i class="far fa-heart heart-icon"></i>
+                <i class="fas fa-share-alt share-icon"></i>
+                <i class="fas fa-ellipsis-v ellipsis-icon"></i>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="code-wrapper">
-        <iframe
-          src="https://www.thiscodeworks.com/embed/61f7bca5b50e540015bbae22"
-          style="width: 100%; height: 385px"
-          frameborder="0"
-        ></iframe>
-      </div>
-      <hr class="divider" />
-      <!-- Basic with text over media -->
-      <div class="sub-heading">
-        <h3>Basic Card with Text over Media</h3>
-        <p>
-          You can get this variant by adding
-          <strong>card-text-over-media</strong> class alongside the
-          <strong>card</strong> class on your div tag.
-        </p>
-      </div>
+        <div class="code-wrapper">
+          <iframe
+            src="https://www.thiscodeworks.com/embed/61f7bca5b50e540015bbae22"
+            style="width: 100%; height: 385px"
+            frameborder="0"
+          ></iframe>
+        </div>
+        <hr class="divider" />
+        <!-- Basic with text over media -->
+        <div class="sub-heading">
+          <h3>Basic Card with Text over Media</h3>
+          <p>
+            You can get this variant by adding
+            <strong>card-text-over-media</strong> class alongside the
+            <strong>card</strong> class on your div tag.
+          </p>
+        </div>
 
-      <div class="cards-wrapper">
-        <div class="card card-text-over-media">
-          <div class="image-container">
-            <img src="/images/card-image.jpg" alt="Card image" />
-          </div>
-          <div class="content-container">
-            <h1>Cutest Dogs Ever</h1>
-            <h3>by Raksha Pawar</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,
-              beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Obcaecati minima eveniet reprehenderit vitae maxime, ducimus
-              eligendi aperiam voluptas officiis. Aliquam?
-            </p>
-          </div>
-          <div class="action-items-container">
-            <div class="btn-container">
-              <button class="btn">Read</button>
-              <button class="btn">Bookmark</button>
+        <div class="cards-wrapper">
+          <div class="card card-text-over-media">
+            <div class="image-container">
+              <img src="/images/card-image.jpg" alt="Card image" />
             </div>
-            <div class="icon-container">
-              <i class="far fa-heart heart-icon"></i>
-              <i class="fas fa-share-alt share-icon"></i>
-              <i class="fas fa-ellipsis-v ellipsis-icon"></i>
+            <div class="content-container">
+              <h1>Cutest Dogs Ever</h1>
+              <h3>by Raksha Pawar</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,
+                beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Obcaecati minima eveniet reprehenderit vitae maxime, ducimus
+                eligendi aperiam voluptas officiis. Aliquam?
+              </p>
+            </div>
+            <div class="action-items-container">
+              <div class="btn-container">
+                <button class="btn">Read</button>
+                <button class="btn">Bookmark</button>
+              </div>
+              <div class="icon-container">
+                <i class="far fa-heart heart-icon"></i>
+                <i class="fas fa-share-alt share-icon"></i>
+                <i class="fas fa-ellipsis-v ellipsis-icon"></i>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="code-wrapper">
-        <iframe
-          src="https://www.thiscodeworks.com/embed/61f7bd04b50e540015bbae24"
-          style="width: 100%; height: 385px"
-          frameborder="0"
-        ></iframe>
-      </div>
+        <div class="code-wrapper">
+          <iframe
+            src="https://www.thiscodeworks.com/embed/61f7bd04b50e540015bbae24"
+            style="width: 100%; height: 385px"
+            frameborder="0"
+          ></iframe>
+        </div>
 
-      <hr class="divider" />
-      <!-- Basic With Header -->
-      <div class="sub-heading">
-        <h3>Basic Card with Header</h3>
-        <p>
-          You can add this variant by using the
-          <strong>card-basic-with-header</strong> class on your div tag.
-        </p>
-      </div>
-      <div class="cards-wrapper">
-        <div class="card card-basic-with-header">
-          <div class="content-container">
-            <h1>Cutest Dogs Ever</h1>
-            <h3>by Raksha Pawar</h3>
-          </div>
-
-          <div class="image-container">
-            <img src="/images/card-image.jpg" alt="Card image" />
-          </div>
-          <div class="content-container">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,
-              beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Odit, aliquid culpa? Explicabo in sequi nihil. Esse ipsum odio
-              molestiae? Id.
-            </p>
-          </div>
-          <div class="action-items-container">
-            <div class="btn-container">
-              <button class="btn">Read</button>
-              <button class="btn">Bookmark</button>
+        <hr class="divider" />
+        <!-- Basic With Header -->
+        <div class="sub-heading">
+          <h3>Basic Card with Header</h3>
+          <p>
+            You can add this variant by using the
+            <strong>card-basic-with-header</strong> class on your div tag.
+          </p>
+        </div>
+        <div class="cards-wrapper">
+          <div class="card card-basic-with-header">
+            <div class="content-container">
+              <h1>Cutest Dogs Ever</h1>
+              <h3>by Raksha Pawar</h3>
             </div>
-            <div class="icon-container">
-              <i class="far fa-heart heart-icon"></i>
-              <i class="fas fa-share-alt share-icon"></i>
-              <i class="fas fa-ellipsis-v ellipsis-icon"></i>
+
+            <div class="image-container">
+              <img src="/images/card-image.jpg" alt="Card image" />
+            </div>
+            <div class="content-container">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,
+                beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Odit, aliquid culpa? Explicabo in sequi nihil. Esse ipsum odio
+                molestiae? Id.
+              </p>
+            </div>
+            <div class="action-items-container">
+              <div class="btn-container">
+                <button class="btn">Read</button>
+                <button class="btn">Bookmark</button>
+              </div>
+              <div class="icon-container">
+                <i class="far fa-heart heart-icon"></i>
+                <i class="fas fa-share-alt share-icon"></i>
+                <i class="fas fa-ellipsis-v ellipsis-icon"></i>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="code-wrapper">
-        <iframe
-          src="https://www.thiscodeworks.com/embed/61f7bd50b50e540015bbae25"
-          style="width: 100%; height: 424px"
-          frameborder="0"
-        ></iframe>
-      </div>
+        <div class="code-wrapper">
+          <iframe
+            src="https://www.thiscodeworks.com/embed/61f7bd50b50e540015bbae25"
+            style="width: 100%; height: 424px"
+            frameborder="0"
+          ></iframe>
+        </div>
 
-      <hr class="divider" />
-      <!-- Card with Only Buttons -->
-      <div class="sub-heading">
-        <h3>Card with only buttons</h3>
-        <p>
-          You can add the <strong>card-with-buttons</strong> class to get this
-          card variant.
-        </p>
-      </div>
-      <div class="cards-wrapper">
-        <div class="card card-with-buttons">
-          <div class="image-container">
-            <img src="/images/card-image.jpg" alt="Card image" />
-          </div>
-          <div class="content-container">
-            <h1>Cutest Dogs Ever</h1>
-            <h3>by Raksha Pawar</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,
-              beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Unde dignissimos doloribus nobis ex reprehenderit corporis aliquid
-              hic vero autem beatae!
-            </p>
-          </div>
-          <div class="action-items-container">
-            <div class="btn-container">
-              <button class="btn">Read</button>
-              <button class="btn">Bookmark</button>
+        <hr class="divider" />
+        <!-- Card with Only Buttons -->
+        <div class="sub-heading">
+          <h3>Card with only buttons</h3>
+          <p>
+            You can add the <strong>card-with-buttons</strong> class to get this
+            card variant.
+          </p>
+        </div>
+        <div class="cards-wrapper">
+          <div class="card card-with-buttons">
+            <div class="image-container">
+              <img src="/images/card-image.jpg" alt="Card image" />
+            </div>
+            <div class="content-container">
+              <h1>Cutest Dogs Ever</h1>
+              <h3>by Raksha Pawar</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,
+                beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Unde dignissimos doloribus nobis ex reprehenderit corporis
+                aliquid hic vero autem beatae!
+              </p>
+            </div>
+            <div class="action-items-container">
+              <div class="btn-container">
+                <button class="btn">Read</button>
+                <button class="btn">Bookmark</button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="code-wrapper">
-        <iframe
-          src="https://www.thiscodeworks.com/embed/61f7bdabb50e540015bbae26"
-          style="width: 100%; height: 385px"
-          frameborder="0"
-        ></iframe>
-      </div>
+        <div class="code-wrapper">
+          <iframe
+            src="https://www.thiscodeworks.com/embed/61f7bdabb50e540015bbae26"
+            style="width: 100%; height: 385px"
+            frameborder="0"
+          ></iframe>
+        </div>
 
-      <hr class="divider" />
+        <hr class="divider" />
 
-      <!-- Card with only icons -->
-      <div class="sub-heading">
-        <h3>Card with only icons</h3>
-        <p>
-          You can use the <strong>card-with-icons</strong> class to get this
-          variant of card which contains only icons and no buttons.
-        </p>
-      </div>
-      <div class="cards-wrapper">
-        <div class="card card-with-icons">
-          <div class="image-container">
-            <img src="/images/card-image.jpg" alt="Card image" />
-          </div>
-          <div class="content-container">
-            <h1>Cutest Dogs Ever</h1>
-            <h3>by Raksha Pawar</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,
-              beatae. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Sunt ipsa pariatur veritatis amet laborum error debitis eaque
-              impedit ducimus porro?
-            </p>
-          </div>
-          <div class="action-items-container">
-            <div class="icon-container">
-              <i class="far fa-heart heart-icon"></i>
-              <i class="fas fa-share-alt share-icon"></i>
-              <i class="fas fa-ellipsis-v ellipsis-icon"></i>
+        <!-- Card with only icons -->
+        <div class="sub-heading">
+          <h3>Card with only icons</h3>
+          <p>
+            You can use the <strong>card-with-icons</strong> class to get this
+            variant of card which contains only icons and no buttons.
+          </p>
+        </div>
+        <div class="cards-wrapper">
+          <div class="card card-with-icons">
+            <div class="image-container">
+              <img src="/images/card-image.jpg" alt="Card image" />
+            </div>
+            <div class="content-container">
+              <h1>Cutest Dogs Ever</h1>
+              <h3>by Raksha Pawar</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,
+                beatae. Lorem ipsum dolor sit amet consectetur, adipisicing
+                elit. Sunt ipsa pariatur veritatis amet laborum error debitis
+                eaque impedit ducimus porro?
+              </p>
+            </div>
+            <div class="action-items-container">
+              <div class="icon-container">
+                <i class="far fa-heart heart-icon"></i>
+                <i class="fas fa-share-alt share-icon"></i>
+                <i class="fas fa-ellipsis-v ellipsis-icon"></i>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="code-wrapper">
-        <iframe
-          src="https://www.thiscodeworks.com/embed/61f7bde9b50e540015bbae27"
-          style="width: 100%; height: 385px"
-          frameborder="0"
-        ></iframe>
-      </div>
+        <div class="code-wrapper">
+          <iframe
+            src="https://www.thiscodeworks.com/embed/61f7bde9b50e540015bbae27"
+            style="width: 100%; height: 385px"
+            frameborder="0"
+          ></iframe>
+        </div>
 
-      <hr class="divider" />
-      <!-- Horizontal card with image and text -->
-      <div class="sub-heading">
-        <h3>Horizontal Card with Image and Text</h3>
-        <p>
-          Use the <strong>card-horizontal</strong> class alongside the
-          <strong>card</strong> class to use this variant of card.
-        </p>
-      </div>
-      <div class="cards-wrapper">
-        <div class="card card-horizontal">
-          <div class="image-container">
-            <img src="/images/card-image.jpg" alt="Card image" />
-          </div>
-          <div class="content-container">
-            <h1>Cutest Dogs Ever</h1>
-            <h3>by Raksha Pawar</h3>
-          </div>
-          <div class="action-items-container">
-            <div class="btn-container">
-              <button class="btn">Read</button>
-              <button class="btn">Bookmark</button>
+        <hr class="divider" />
+        <!-- Horizontal card with image and text -->
+        <div class="sub-heading">
+          <h3>Horizontal Card with Image and Text</h3>
+          <p>
+            Use the <strong>card-horizontal</strong> class alongside the
+            <strong>card</strong> class to use this variant of card.
+          </p>
+        </div>
+        <div class="cards-wrapper">
+          <div class="card card-horizontal">
+            <div class="image-container">
+              <img src="/images/card-image.jpg" alt="Card image" />
             </div>
-            <div class="icon-container">
-              <i class="far fa-heart heart-icon"></i>
-              <i class="fas fa-share-alt share-icon"></i>
-              <i class="fas fa-ellipsis-v ellipsis-icon"></i>
+            <div class="content-container">
+              <h1>Cutest Dogs Ever</h1>
+              <h3>by Raksha Pawar</h3>
+            </div>
+            <div class="action-items-container">
+              <div class="btn-container">
+                <button class="btn">Read</button>
+                <button class="btn">Bookmark</button>
+              </div>
+              <div class="icon-container">
+                <i class="far fa-heart heart-icon"></i>
+                <i class="fas fa-share-alt share-icon"></i>
+                <i class="fas fa-ellipsis-v ellipsis-icon"></i>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="code-wrapper">
-        <iframe
-          src="https://www.thiscodeworks.com/embed/61f7bf08b50e540015bbae29"
-          style="width: 100%; height: 346px"
-          frameborder="0"
-        ></iframe>
-      </div>
+        <div class="code-wrapper">
+          <iframe
+            src="https://www.thiscodeworks.com/embed/61f7bf08b50e540015bbae29"
+            style="width: 100%; height: 346px"
+            frameborder="0"
+          ></iframe>
+        </div>
 
-      <hr class="divider" />
+        <hr class="divider" />
 
-      <div class="sub-heading">
-        <h3>Card With Dismiss</h3>
-        <p>
-          Use the <strong>card-dismiss</strong> class alongside the
-          <strong>card</strong> class to get the card with dismiss icon.
-        </p>
-      </div>
+        <div class="sub-heading">
+          <h3>Card With Dismiss</h3>
+          <p>
+            Use the <strong>card-dismiss</strong> class alongside the
+            <strong>card</strong> class to get the card with dismiss icon.
+          </p>
+        </div>
 
-      <div class="cards-wrapper">
-        <div class="card card-basic card-dismiss">
-          <div class="image-container">
-            <img src="/images/card-image.jpg" alt="Card image" />
-            <i class="fa fa-times close-icon"></i>
-          </div>
-          <div class="content-container">
-            <h1>Cutest Dogs Ever</h1>
-            <h3>by Raksha Pawar</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,
-              beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Quod cupiditate ipsa adipisci blanditiis, dignissimos aliquam
-              minus aliquid explicabo accusantium deserunt.
-            </p>
-          </div>
-          <div class="action-items-container">
-            <div class="btn-container">
-              <button class="btn">Read</button>
-              <button class="btn">Bookmark</button>
+        <div class="cards-wrapper">
+          <div class="card card-basic card-dismiss">
+            <div class="image-container">
+              <img src="/images/card-image.jpg" alt="Card image" />
+              <i class="fa fa-times close-icon"></i>
             </div>
-            <div class="icon-container">
-              <i class="far fa-heart heart-icon"></i>
-              <i class="fas fa-share-alt share-icon"></i>
-              <i class="fas fa-ellipsis-v ellipsis-icon"></i>
+            <div class="content-container">
+              <h1>Cutest Dogs Ever</h1>
+              <h3>by Raksha Pawar</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,
+                beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quod cupiditate ipsa adipisci blanditiis, dignissimos aliquam
+                minus aliquid explicabo accusantium deserunt.
+              </p>
+            </div>
+            <div class="action-items-container">
+              <div class="btn-container">
+                <button class="btn">Read</button>
+                <button class="btn">Bookmark</button>
+              </div>
+              <div class="icon-container">
+                <i class="far fa-heart heart-icon"></i>
+                <i class="fas fa-share-alt share-icon"></i>
+                <i class="fas fa-ellipsis-v ellipsis-icon"></i>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="code-wrapper">
-        <iframe
-          src="https://www.thiscodeworks.com/embed/61fcd8dfb57bf800152b721c"
-          style="width: 100%; height: 437px"
-          frameborder="0"
-        ></iframe>
-      </div>
+        <div class="code-wrapper">
+          <iframe
+            src="https://www.thiscodeworks.com/embed/61fcd8dfb57bf800152b721c"
+            style="width: 100%; height: 437px"
+            frameborder="0"
+          ></iframe>
+        </div>
 
-      <hr class="divider" />
+        <hr class="divider" />
 
-      <div class="sub-heading">
-        <h3>Card with Badge</h3>
-        <p>
-          Use the <strong>card-badge</strong> class alongside the
-          <strong>card</strong> class to get the card with badge.
-        </p>
-      </div>
+        <div class="sub-heading">
+          <h3>Card with Badge</h3>
+          <p>
+            Use the <strong>card-badge</strong> class alongside the
+            <strong>card</strong> class to get the card with badge.
+          </p>
+        </div>
 
-      <div class="cards-wrapper">
-        <div class="card card-basic card-badge">
-          <div class="image-container">
-            <img src="/images/card-image.jpg" alt="Card image" />
-            <span class="badge">New</span>
-          </div>
-          <div class="content-container">
-            <h1>Cutest Dogs Ever</h1>
-            <h3>by Raksha Pawar</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,
-              beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Quod cupiditate ipsa adipisci blanditiis, dignissimos aliquam
-              minus aliquid explicabo accusantium deserunt.
-            </p>
-          </div>
-          <div class="action-items-container">
-            <div class="btn-container">
-              <button class="btn">Read</button>
-              <button class="btn">Bookmark</button>
+        <div class="cards-wrapper">
+          <div class="card card-basic card-badge">
+            <div class="image-container">
+              <img src="/images/card-image.jpg" alt="Card image" />
+              <span class="badge">New</span>
             </div>
-            <div class="icon-container">
-              <i class="far fa-heart heart-icon"></i>
-              <i class="fas fa-share-alt share-icon"></i>
-              <i class="fas fa-ellipsis-v ellipsis-icon"></i>
+            <div class="content-container">
+              <h1>Cutest Dogs Ever</h1>
+              <h3>by Raksha Pawar</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,
+                beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quod cupiditate ipsa adipisci blanditiis, dignissimos aliquam
+                minus aliquid explicabo accusantium deserunt.
+              </p>
+            </div>
+            <div class="action-items-container">
+              <div class="btn-container">
+                <button class="btn">Read</button>
+                <button class="btn">Bookmark</button>
+              </div>
+              <div class="icon-container">
+                <i class="far fa-heart heart-icon"></i>
+                <i class="fas fa-share-alt share-icon"></i>
+                <i class="fas fa-ellipsis-v ellipsis-icon"></i>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="code-wrapper">
-        <iframe
-          src="https://www.thiscodeworks.com/embed/61fcdcfbb57bf800152b7223"
-          style="width: 100%; height: 437px"
-          frameborder="0"
-        ></iframe>
-      </div>
+        <div class="code-wrapper">
+          <iframe
+            src="https://www.thiscodeworks.com/embed/61fcdcfbb57bf800152b7223"
+            style="width: 100%; height: 437px"
+            frameborder="0"
+          ></iframe>
+        </div>
 
-      <hr class="divider" />
+        <hr class="divider" />
 
-      <div class="sub-heading">
-        <h3>Card with Overlay</h3>
-        <p>
-          Use the <strong>card-overlay</strong> class to get a card with
-          overlay.
-        </p>
-      </div>
+        <div class="sub-heading">
+          <h3>Card with Overlay</h3>
+          <p>
+            Use the <strong>card-overlay</strong> class to get a card with
+            overlay.
+          </p>
+        </div>
 
-      <div class="cards-wrapper">
-        <div class="card card-basic card-overlay">
-          <div class="image-container">
-            <img src="/images/card-image.jpg" alt="Card image" />
-          </div>
-          <div class="content-container">
-            <h1>Cutest Dogs Ever</h1>
-            <h3>by Raksha Pawar</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,
-              beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Quod cupiditate ipsa adipisci blanditiis, dignissimos aliquam
-              minus aliquid explicabo accusantium deserunt.
-            </p>
-          </div>
-          <div class="action-items-container">
-            <div class="btn-container">
-              <button class="btn">Read</button>
-              <button class="btn">Bookmark</button>
+        <div class="cards-wrapper">
+          <div class="card card-basic card-overlay">
+            <div class="image-container">
+              <img src="/images/card-image.jpg" alt="Card image" />
             </div>
-            <div class="icon-container">
-              <i class="far fa-heart heart-icon"></i>
-              <i class="fas fa-share-alt share-icon"></i>
-              <i class="fas fa-ellipsis-v ellipsis-icon"></i>
+            <div class="content-container">
+              <h1>Cutest Dogs Ever</h1>
+              <h3>by Raksha Pawar</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,
+                beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quod cupiditate ipsa adipisci blanditiis, dignissimos aliquam
+                minus aliquid explicabo accusantium deserunt.
+              </p>
             </div>
-          </div>
-          <div class="overlay">
-            <h3 class="overlay-content">Out of Stock</h3>
+            <div class="action-items-container">
+              <div class="btn-container">
+                <button class="btn">Read</button>
+                <button class="btn">Bookmark</button>
+              </div>
+              <div class="icon-container">
+                <i class="far fa-heart heart-icon"></i>
+                <i class="fas fa-share-alt share-icon"></i>
+                <i class="fas fa-ellipsis-v ellipsis-icon"></i>
+              </div>
+            </div>
+            <div class="overlay">
+              <h3 class="overlay-content">Out of Stock</h3>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="code-wrapper">
-        <iframe
-          src="https://www.thiscodeworks.com/embed/61fce31eb57bf800152b7227"
-          style="width: 100%; height: 463px"
-          frameborder="0"
-        ></iframe>
+        <div class="code-wrapper">
+          <iframe
+            src="https://www.thiscodeworks.com/embed/61fce31eb57bf800152b7227"
+            style="width: 100%; height: 463px"
+            frameborder="0"
+          ></iframe>
+        </div>
       </div>
     </div>
+
+    <!-- Footer starts -->
+    <footer class="footer">
+      <div class="credits">
+        <i class="fas fa-code"></i> with <i class="fas fa-heart"></i> by Raksha
+        Pawar
+      </div>
+
+      <div class="social-links">
+        <a href="https://twitter.com/rakshapawar108"
+          ><i class="fab fa-twitter" title="Twitter"></i
+        ></a>
+        <a href="https://github.com/RakshaPawar108"
+          ><i class="fab fa-github" title="Github"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/rakshapawar/"
+          ><i class="fab fa-linkedin" title="LinkedIn"></i
+        ></a>
+      </div>
+    </footer>
+
+    <!-- Footer Ends -->
+
+    <script src="/js/navbar.js"></script>
   </body>
 </html>
