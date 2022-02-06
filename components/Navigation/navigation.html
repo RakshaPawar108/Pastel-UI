@@ -13,8 +13,8 @@
     <!-- My stylesheets -->
 
     <link rel="stylesheet" href="/css/main.css" />
-    <link rel="stylesheet" href="/components/Grid/grid.css" />
-    <title>Pastel UI | Grids</title>
+    <link rel="stylesheet" href="/components/Navigation/navigation.css" />
+    <title>Pastel UI | Navigation</title>
   </head>
   <body>
     <!-- Header starts -->
@@ -64,14 +64,14 @@
           <li><a href="/components/Image/image.html">Image</a></li>
           <li><a href="/components/Input/input.html">Input</a></li>
           <li><a href="/components/Lists/list.html">List</a></li>
-          <li><a href="/components/Modal/modal.html">Modal</a></li>
           <li>
+            <a href="/components/Modal/modal.html">Modal</a>
+          </li>
+          <li class="active">
             <a href="/components/Navigation/navigation.html ">Navigation</a>
           </li>
           <li><a href="/components/Rating/rating.html">Rating</a></li>
-          <li class="active">
-            <a href="/components/Grid/grid.html">Simplified Grids</a>
-          </li>
+          <li><a href="/components/Grid/grid.html">Simplified Grids</a></li>
           <li>
             <a href="/components/Slider/slider.html">Slider</a>
           </li>
@@ -83,101 +83,119 @@
       </aside>
       <!-- Sidebar ends -->
 
-      <div class="section">
+      <section class="section">
         <div class="heading">
-          <h1>Grid Layout</h1>
+          <h1>Navigation</h1>
           <p>
-            The Grid Layout is a series of containers, rows and columns to
-            layout and align content. It uses CSS grid-based approach to layout
-            the websites.
+            Navigation component allows the user to navigate through websites
+            smoothly.
           </p>
         </div>
+
         <hr class="divider" />
+
         <div class="sub-heading">
-          <h3>2 Column Grid Layout</h3>
+          <h3>Simple Navigation</h3>
           <p>
-            You can get the 2 column layout by using the
-            <strong>grid-cols-2</strong> class alongside the
-            <strong>grid</strong> class to your div tag.
+            You can get a simple responsive navbar by using the
+            <strong>navigation</strong> class on your nav tag.
           </p>
         </div>
-        <div class="grids-wrapper">
-          <div class="grid grid-cols-2">
-            <div class="col-1">Column 1</div>
-            <div class="col-2">Column 2</div>
-          </div>
+        <div class="navigation-wrapper">
+          <nav class="navigation">
+            <div class="navigation-brand"><a href="#">Pastel UI</a></div>
+            <ul class="navigation-items">
+              <li class="navigation-item">
+                <a href="#" class="navigation-link">Home</a>
+              </li>
+              <li class="navigation-item">
+                <a href="#" class="navigation-link">About</a>
+              </li>
+              <li class="navigation-item">
+                <a href="#" class="navigation-link">Contact</a>
+              </li>
+            </ul>
+          </nav>
         </div>
+
         <div class="code-wrapper">
           <iframe
-            src="https://www.thiscodeworks.com/embed/61fc16246ab14d0015c32db1"
-            style="width: 100%; height: 138px"
+            src="https://www.thiscodeworks.com/embed/61fe189133c09d0015b44e39"
+            style="width: 100%; height: 268px"
             frameborder="0"
           ></iframe>
         </div>
 
         <hr class="divider" />
+
         <div class="sub-heading">
-          <h3>3 Column Grid Layout</h3>
+          <h3>Navigation with Hamburger Icon</h3>
           <p>
-            You can get the 3 column layout by using the
-            <strong>grid-cols-3</strong> class alongside the
-            <strong>grid</strong> class to your div tag.
+            Navigation with Hamburger Icon are usually used for smaller screen
+            where the icon is clickable to display the nav items.
           </p>
         </div>
-        <div class="grids-wrapper">
-          <div class="grid grid-cols-3">
-            <div class="col-1">Column 1</div>
-            <div class="col-2">Column 2</div>
-            <div class="col-3">Column 3</div>
-          </div>
-        </div>
-        <div class="code-wrapper">
-          <iframe
-            src="https://www.thiscodeworks.com/embed/61fc16506ab14d0015c32db4"
-            style="width: 100%; height: 151px"
-            frameborder="0"
-          ></iframe>
-        </div>
-        <hr class="divider" />
-        <div class="sub-heading">
-          <h3>Holy Grail Layout</h3>
-          <p>
-            Holy Grail is a layout pattern that is very common on the web. It
-            consists of a header, a main content area with fixed width
-            navigation on the left, content in the middle and a fixed width
-            sidebar on the right and then a footer.
-          </p>
-          <p>
-            You can get a ready-made Holy Grail layout by using the
-            <strong>grid-holy-grail</strong> class alongside the
-            <strong>grid</strong> class on your div tag.
-          </p>
-        </div>
-        <div class="grids-wrapper">
-          <div class="grid grid-holy-grail">
-            <header>Header</header>
-            <nav>Navigation</nav>
-            <main>
-              Main Content
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-                officia facilis consequuntur in commodi sunt molestias corporis
-                doloribus sapiente sed.
-              </p>
-            </main>
-            <aside>Sidebar</aside>
-            <footer>Footer</footer>
-          </div>
+
+        <div class="navigation-wrapper">
+          <nav class="navigation">
+            <div class="navigation-brand"><a href="#">Pastel UI</a></div>
+            <button class="navigation-open-btn">
+              <i class="fas fa-2x fa-bars"></i>
+            </button>
+          </nav>
         </div>
 
         <div class="code-wrapper">
           <iframe
-            src="https://www.thiscodeworks.com/embed/61fc1d156ab14d0015c32dd5"
-            style="width: 100%; height: 307px"
+            src="https://www.thiscodeworks.com/embed/61fe209333c09d0015b44e3b"
+            style="width: 100%; height: 164px"
             frameborder="0"
           ></iframe>
         </div>
-      </div>
+
+        <hr class="divider" />
+
+        <div class="sub-heading">
+          <h3>Navigation with Submenu</h3>
+          <p>
+            Some Navigation items may also contain items inside the. You can use
+            the <strong>navigation-item-sub</strong> on the item with sub-items
+            in it.
+          </p>
+        </div>
+
+        <div class="navigation-wrapper">
+          <nav class="navigation">
+            <div class="navigation-brand"><a href="#">Pastel UI</a></div>
+            <ul class="navigation-items">
+              <li class="navigation-item">
+                <a href="#" class="navigation-link">Home</a>
+              </li>
+              <li class="navigation-item-sub">
+                <a href="#" class="navigation-link"
+                  >About <i class="fa fa-caret-down"></i
+                ></a>
+                <div class="submenu-links">
+                  <a href="#">Item 1</a>
+                  <a href="#">Item 2</a>
+                  <a href="#">Item 3</a>
+                </div>
+              </li>
+              <li class="navigation-item">
+                <a href="#" class="navigation-link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="code-wrapper">
+          <iframe
+            src="https://www.thiscodeworks.com/embed/61fe278d33c09d0015b44e43"
+            style="width: 100%; height: 333px"
+            frameborder="0"
+          ></iframe>
+        </div>
+      </section>
     </div>
 
     <!-- Footer starts -->

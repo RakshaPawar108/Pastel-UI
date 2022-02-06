@@ -13,8 +13,8 @@
     <!-- My stylesheets -->
 
     <link rel="stylesheet" href="/css/main.css" />
-    <link rel="stylesheet" href="/components/Grid/grid.css" />
-    <title>Pastel UI | Grids</title>
+    <link rel="stylesheet" href="/components/Slider/slider.css" />
+    <title>Pastel UI | Slider</title>
   </head>
   <body>
     <!-- Header starts -->
@@ -69,10 +69,8 @@
             <a href="/components/Navigation/navigation.html ">Navigation</a>
           </li>
           <li><a href="/components/Rating/rating.html">Rating</a></li>
+          <li><a href="/components/Grid/grid.html">Simplified Grids</a></li>
           <li class="active">
-            <a href="/components/Grid/grid.html">Simplified Grids</a>
-          </li>
-          <li>
             <a href="/components/Slider/slider.html">Slider</a>
           </li>
           <li><a href="/components/Snackbar/snackbar.html">Snackbar</a></li>
@@ -83,101 +81,48 @@
       </aside>
       <!-- Sidebar ends -->
 
-      <div class="section">
+      <section class="section">
         <div class="heading">
-          <h1>Grid Layout</h1>
+          <h1>Slider</h1>
           <p>
-            The Grid Layout is a series of containers, rows and columns to
-            layout and align content. It uses CSS grid-based approach to layout
-            the websites.
+            Slider allows users to view and select a value from the range along
+            a bar.
           </p>
-        </div>
-        <hr class="divider" />
-        <div class="sub-heading">
-          <h3>2 Column Grid Layout</h3>
-          <p>
-            You can get the 2 column layout by using the
-            <strong>grid-cols-2</strong> class alongside the
-            <strong>grid</strong> class to your div tag.
-          </p>
-        </div>
-        <div class="grids-wrapper">
-          <div class="grid grid-cols-2">
-            <div class="col-1">Column 1</div>
-            <div class="col-2">Column 2</div>
-          </div>
-        </div>
-        <div class="code-wrapper">
-          <iframe
-            src="https://www.thiscodeworks.com/embed/61fc16246ab14d0015c32db1"
-            style="width: 100%; height: 138px"
-            frameborder="0"
-          ></iframe>
         </div>
 
         <hr class="divider" />
+
         <div class="sub-heading">
-          <h3>3 Column Grid Layout</h3>
+          <h3>Basic Slider</h3>
           <p>
-            You can get the 3 column layout by using the
-            <strong>grid-cols-3</strong> class alongside the
-            <strong>grid</strong> class to your div tag.
+            Use the <strong>slider</strong> class to use the slider component.
           </p>
         </div>
-        <div class="grids-wrapper">
-          <div class="grid grid-cols-3">
-            <div class="col-1">Column 1</div>
-            <div class="col-2">Column 2</div>
-            <div class="col-3">Column 3</div>
-          </div>
-        </div>
-        <div class="code-wrapper">
-          <iframe
-            src="https://www.thiscodeworks.com/embed/61fc16506ab14d0015c32db4"
-            style="width: 100%; height: 151px"
-            frameborder="0"
-          ></iframe>
-        </div>
-        <hr class="divider" />
-        <div class="sub-heading">
-          <h3>Holy Grail Layout</h3>
-          <p>
-            Holy Grail is a layout pattern that is very common on the web. It
-            consists of a header, a main content area with fixed width
-            navigation on the left, content in the middle and a fixed width
-            sidebar on the right and then a footer.
-          </p>
-          <p>
-            You can get a ready-made Holy Grail layout by using the
-            <strong>grid-holy-grail</strong> class alongside the
-            <strong>grid</strong> class on your div tag.
-          </p>
-        </div>
-        <div class="grids-wrapper">
-          <div class="grid grid-holy-grail">
-            <header>Header</header>
-            <nav>Navigation</nav>
-            <main>
-              Main Content
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-                officia facilis consequuntur in commodi sunt molestias corporis
-                doloribus sapiente sed.
-              </p>
-            </main>
-            <aside>Sidebar</aside>
-            <footer>Footer</footer>
+
+        <div class="slider-wrapper">
+          <div class="slider">
+            <div class="slider-field">
+              <div class="value-left">0</div>
+              <input
+                type="range"
+                class="slider-interactive"
+                min="0"
+                max="200"
+                value="100"
+              />
+              <div class="value-right">200</div>
+            </div>
           </div>
         </div>
 
         <div class="code-wrapper">
           <iframe
-            src="https://www.thiscodeworks.com/embed/61fc1d156ab14d0015c32dd5"
-            style="width: 100%; height: 307px"
+            src="https://www.thiscodeworks.com/embed/61ffe0374dd44f0015f3cc35"
+            style="width: 100%; height: 177px"
             frameborder="0"
           ></iframe>
         </div>
-      </div>
+      </section>
     </div>
 
     <!-- Footer starts -->

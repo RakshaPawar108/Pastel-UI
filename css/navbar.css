@@ -84,7 +84,7 @@
   }
 
   .navbar-close-btn {
-      display:none;
+    display: none;
   }
 
   .navbar {
@@ -106,7 +106,6 @@
   }
 
   .nav-item i {
-      display: inline-block;
+    display: inline-block;
   }
-
 }
