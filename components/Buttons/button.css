@@ -1,122 +1,121 @@
 .buttons-wrapper {
-    background-color:var(--white);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    justify-self: center;
-    align-self: center;
-    padding: 2rem;
-    width: 80%;
-    margin: 2rem;
-    flex-wrap: wrap;
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  justify-self: center;
+  align-self: center;
+  padding: 2rem;
+  width: 80%;
+  margin: 2rem;
+  flex-wrap: wrap;
 }
 
-.btn {
-    background-color:var(--gray);
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width:fit-content;
-    gap:1rem;
-    font-size: 1.2rem;
-
+.button {
+  background-color: var(--gray);
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  margin: 1rem;
+  font-size: 1.2rem;
+  padding: 1rem;
 }
 
-.btn:hover {
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+.button:hover {
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.button > i {
+  padding: 0.5rem;
 }
 
 .btn-primary {
-    background-color:var(--primary-color);
-
+  background-color: var(--primary-color);
 }
 
 .btn-primary:hover {
-    background-color:var(--new-york-pink);
+  background-color: var(--new-york-pink);
 }
 
 .btn-secondary {
-    background-color:var(--apricot);
+  background-color: var(--apricot);
 }
 
 .btn-secondary:hover {
-    background-color:var(--primary-color);
-    color: var(--secondary-color);
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .btn-outlined {
-    border:2px solid var(--primary-color);
-    background-color:transparent;
+  border: 2px solid var(--primary-color);
+  background-color: transparent;
 }
 
 .btn-outlined:hover {
-    background-color:var(--new-york-pink);
-    color: var(--secondary-color);
+  background-color: var(--new-york-pink);
+  color: var(--secondary-color);
 }
 
 .btn-disabled {
-    pointer-events: none;
-    background-color:var(--primary-color);
-    opacity: 70%;
+  pointer-events: none;
+  background-color: var(--primary-color);
+  opacity: 70%;
 }
 
 .btn-success {
-    background-color:var(--green);
-    color:var(--pastel-green);
+  background-color: var(--green);
+  color: var(--pastel-green);
 }
 
 .btn-success:hover {
-    color:var(--green);
-    background-color:var(--pastel-green);
+  color: var(--green);
+  background-color: var(--pastel-green);
 }
 
 .btn-warning {
-    background-color:var(--yellow);
-    color:var(--pastel-yellow-text);
+  background-color: var(--yellow);
+  color: var(--pastel-yellow-text);
 }
 
 .btn-warning:hover {
-    background-color:var(--pastel-yellow);
+  background-color: var(--pastel-yellow);
 }
 
 .btn-info {
-    background-color:var(--blue);
-    color:var(--pastel-blue);
+  background-color: var(--blue);
+  color: var(--pastel-blue);
 }
 
 .btn-info:hover {
-    color: var(--blue);
-    background-color:var(--pastel-blue);
+  color: var(--blue);
+  background-color: var(--pastel-blue);
 }
 
 .btn-danger {
-    background-color:var(--red);
-    color:var(--pastel-red-text);
+  background-color: var(--red);
+  color: var(--pastel-red-text);
 }
 
 .btn-danger:hover {
-    background-color:var(--pastel-red);
+  background-color: var(--pastel-red);
 }
 
 .btn-float {
-    height: 4rem;
-    width: 4rem;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    color:var(--default-color);
-    font-size: 1.3rem;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  color: var(--default-color);
+  font-size: 1.3rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

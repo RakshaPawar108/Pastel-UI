@@ -73,7 +73,7 @@
   display: flex;
   width: fit-content;
 }
-.btn {
+.btn-container > .btn {
   background-color: transparent;
   border: none;
   border-radius: 10%;
@@ -93,12 +93,17 @@
   justify-content: center;
   text-align: center;
   width: fit-content;
+  padding: 0.5rem;
 }
-.icon-container > * {
-  padding-top: 0.7rem;
+.icon-container > .heart-icon,
+.icon-container > .share-icon,
+.icon-container > .ellipsis-icon {
+  padding-top: 0.4rem;
 }
-i,
-.close-icon {
+.icon-container > .heart-icon,
+.icon-container > .share-icon,
+.icon-container > .ellipsis-icon,
+.card-close-icon {
   align-items: center;
   border-radius: 50%;
   cursor: pointer;
@@ -108,8 +113,11 @@ i,
   justify-content: center;
   width: 2.6rem;
 }
-.btn:hover,
-i:hover {
+.btn-container > .btn:hover,
+.icon-container > .heart-icon:hover,
+.icon-container > .share-icon:hover,
+.icon-container > .ellipsis-icon:hover,
+.card-close-icon:hover {
   box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.25);
 }
 /* Variants */
@@ -173,13 +181,13 @@ i:hover {
   padding-left: 7rem;
 }
 /* Card with Dismiss */
-.card-dismiss > .image-container > .close-icon {
+.card-dismiss > .image-container > .card-close-icon {
   position: absolute;
   right: 5px;
   top: 12px;
 }
 /* Card with Badge */
-.card-badge > .image-container > .badge {
+.card-badge > .image-container > .ecomm-badge {
   background-color: var(--primary-color);
   font-weight: 600;
   left: 0px;
