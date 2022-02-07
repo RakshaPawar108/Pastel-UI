@@ -37,7 +37,7 @@
   background-color: var(--light-gray);
 }
 /* Badge with icons */
-.icon {
+.badge-icon {
   font-size: 3rem;
   margin: 0 0.5rem;
   padding: 1rem;
