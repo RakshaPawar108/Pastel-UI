@@ -21,7 +21,9 @@
   position: relative;
   width: 22rem;
 }
-.card:hover {
+.card:hover,
+.ecomm-horizontal-card:hover,
+.ecomm-billing-card:hover {
   -moz-transition: 0.5s ease-in;
   -ms-transition: 0.5s ease-in;
   -o-transition: 0.5s ease-in;
@@ -265,10 +267,11 @@
   font-size: 1.5rem;
 }
 
-.prod-category {
+.prod-category,
+.h-card-price {
   font-weight: 400;
   color: var(--default-color);
-  margin: 0.2rem 0;
+  margin: 0.2rem 0.2rem;
 }
 
 .prod-action-btn {
@@ -285,13 +288,85 @@
   text-transform: uppercase;
 }
 
-/* Detailed Product-Card */
+/* Horizontal E-commerce-Card */
 
-#num-products {
-  cursor: pointer;
-  height: 2rem;
+.ecomm-horizontal-card {
+  width: 30rem;
+  display: flex;
+  border-radius: 0rem;
+  background-color: var(--secondary-color);
+}
+
+.ecomm-horizontal-card .image-container {
+  flex: 1 1 8rem;
+}
+
+.ecomm-horizontal-card .image-container img {
+  border-radius: 0rem;
+  object-fit: cover;
+}
+
+.ecomm-horizontal-card .h-card-details {
+  margin: auto 1rem;
+  flex: 2 1 8rem;
+}
+
+.num-products {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 40%;
+  border: 1px solid var(--primary-color);
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+}
+
+.num-products .add-sub-btn {
+  border: none;
+  color: var(--primary-color);
+  font-size: 1rem;
+}
+
+.ecomm-horizontal-card .wishlist-btn {
+  margin-top: 1rem;
+  width: 100%;
+  background-color: var(--primary-color);
+  padding: 1rem;
+  color: var(--secondary-color);
+  text-transform: uppercase;
+}
+
+/* Ecommerce Billing Card */
+
+.ecomm-billing-card {
+  width: 25rem;
+  margin: 2rem;
+  background-color: var(--secondary-color);
+  padding: 0.5rem;
+}
+
+.billing-card-title {
+  font-size: 1.2rem;
   margin: 0.5rem;
-  outline: 0;
-  text-align: center;
-  width: 3rem;
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.pricing-container {
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.items-price {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+.total-price-container {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.order-btn {
+  margin-bottom: 0.5rem;
 }
