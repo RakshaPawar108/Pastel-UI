@@ -50,6 +50,15 @@
   color: var(--secondary-color);
 }
 
+.btn-link {
+  background-color: var(--secondary-color);
+}
+
+.btn-link:hover {
+  background-color: var(--new-york-pink);
+  color: var(--secondary-color);
+}
+
 .btn-outlined {
   border: 2px solid var(--primary-color);
   background-color: transparent;
